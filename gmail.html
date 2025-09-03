@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gmail Logo Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; display:flex; align-items:center; justify-content:center; min-height:100vh; background:#f7f7f7; margin:0; }
+    .card { background:#fff; padding:24px 28px; border-radius:16px; box-shadow:0 6px 24px rgba(0,0,0,.08); text-align:center; }
+    .logo { width:64px; height:64px; border-radius:12px; }
+    .title { margin:12px 0 8px; font-size:1.25rem; }
+    .links a { display:inline-block; margin:6px 8px; padding:10px 14px; border-radius:10px; text-decoration:none; border:1px solid #ddd; }
+    .links a:hover { background:#fafafa; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Gmail logo source path (favicon served by Google) -->
+    <img class="logo" src="https://mail.google.com/favicon.ico" alt="Gmail logo" />
+
+    <!-- If you prefer a local file, download a PNG/SVG and use this instead:
+    <img class="logo" src="images/gmail-logo.png" alt="Gmail logo" />
+    -->
+
+    <div class="title">Gmail</div>
+    <p>Click below to open Gmail or compose a new message.</p>
+    <div class="links">
+      <a href="https://mail.google.com/" target="_blank" rel="noopener">Open Gmail</a>
+      <a href="mailto:someone@example.com?subject=Hello&body=Hi%20there!">Compose (mailto:)</a>
+    </div>
+  </div>
+</body>
+</html>
